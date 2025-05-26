@@ -1,0 +1,74 @@
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Conda environment folders
+env/
+venv/
+.anaconda_backup/
+
+# Conda environment configuration files (if manually created folders)
+anomaly-detection/
+
+# Virtualenv files
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# Pytest
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# MacOS
+.DS_Store
+
+# Environment files
+.env
+.env.*
+attacks
+data
+attacks_with_top_feat
+feature_pics
+all_data.csv
+bot_feat.png
+bot.png
+DDos.png
+FTP-Patator.png
+Infiltration.png
+output.png
+PortScan.png
+SSH-Patator.png
+# Jupyter runtime
+~/.local/share/jupyter/runtime/

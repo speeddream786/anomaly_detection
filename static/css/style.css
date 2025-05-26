@@ -1,0 +1,74 @@
+/* Global styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f7fa;
+  color: #333;
+}
+
+/* Center heading */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Center button */
+#toggleBtn {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#toggleBtn:hover {
+  background-color: #45a049;
+}
+#toggleBtn.active {
+  background-color: #e53935;
+}
+#toggleBtn.active:hover {
+  background-color: #d32f2f;
+}
+/* Scrollable table container */
+.table-container {
+  max-height: 500px;
+  overflow: auto;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+}
+
+/* Table styling */
+#packetTable {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: max-content; /* forces horizontal scroll if too wide */
+}
+
+#packetTable thead {
+  background-color: #000080;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#packetTable th,
+#packetTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Zebra rows */
+#packetTable tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}

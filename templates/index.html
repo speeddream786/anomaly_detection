@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/c43c657c77.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anomaly detections</title>
+    <meta
+      name="keywords"
+      content=""
+    />
+
+    <meta name="title" content="" />
+    <meta
+      name="description"
+      content=""
+    />
+    <meta name="author" href="" content="" />
+    <meta
+      property="og:description"
+    />
+  
+
+    <title>Anomaly detection</title>
+
+    <!-- font awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+ 
+
+    <!--css files-->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/navbar.css')}}" />
+
+    <!--google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Montserrat|Open+Sans|Poppins|Roboto|Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+ 
+      <h1>Anomaly Detection</h1>
+      <button id="toggleBtn" onclick="toggleSniff()">Start</button>
+      
+      <div class="table-container">
+        <table id="packetTable">
+          <thead>
+            <tr id="tableHeaders"></tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      
+  
+    <!-- JavaScript Files -->
+    
+    <script src="{{url_for('static',filename='js/api.js')}}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+  </body>
+</html>
